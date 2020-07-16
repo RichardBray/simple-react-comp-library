@@ -1,40 +1,9 @@
 {
-  "name": "@richardbray/simple-react-comp-library",
+  "name": "simple-react-comp-library",
   "version": "0.1.0",
-  "dependencies": {},
-  "scripts": {
-    "start": "react-scripts start",
-    "test": "react-scripts test",
-    "eject": "react-scripts eject",
-    "clean": "rm -rf dist",
-    "prepare-build": "npm run clean && NODE_ENV=production babel lib --out-dir dist --extensions \".ts,.tsx\" --ignore 'lib/**/*.test.js'",
-    "copy": "cp package.json dist/ && cp README.md dist/",
-    "build": "npm run prepare-build && npm run copy"
-  },
-  "eslintConfig": {
-    "extends": "react-app"
-  },
-  "publishConfig": {
-    "registry": "https://npm.pkg.github.com/"
-  },
-  "browserslist": {
-    "production": [
-      ">0.2%",
-      "not dead",
-      "not op_mini all"
-    ],
-    "development": [
-      "last 1 chrome version",
-      "last 1 firefox version",
-      "last 1 safari version"
-    ]
-  },
-  "main": "index.js",
-  "devDependencies": {
-    "@babel/cli": "^7.10.5",
-    "@babel/preset-env": "^7.10.4",
-    "@babel/preset-react": "^7.10.4",
-    "@babel/preset-typescript": "^7.10.4",
+  "private": true,
+  "dependencies": {
+    "@richardbray/simple-react-comp-library": "^0.1.0",
     "@testing-library/jest-dom": "^4.2.4",
     "@testing-library/react": "^9.5.0",
     "@testing-library/user-event": "^7.2.1",
@@ -47,18 +16,25 @@
     "react-scripts": "3.4.1",
     "typescript": "^3.7.5"
   },
-  "description": "This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).",
-  "directories": {
-    "lib": "lib"
+  "scripts": {
+    "start": "react-scripts start",
+    "build": "react-scripts build",
+    "test": "react-scripts test",
+    "eject": "react-scripts eject"
   },
-  "repository": {
-    "type": "git",
-    "url": "git+https://github.com/RichardBray/simple-react-comp-library.git"
+  "eslintConfig": {
+    "extends": "react-app"
   },
-  "author": "",
-  "license": "ISC",
-  "bugs": {
-    "url": "https://github.com/RichardBray/simple-react-comp-library/issues"
-  },
-  "homepage": "https://github.com/RichardBray/simple-react-comp-library#readme"
+  "browserslist": {
+    "production": [
+      ">0.2%",
+      "not dead",
+      "not op_mini all"
+    ],
+    "development": [
+      "last 1 chrome version",
+      "last 1 firefox version",
+      "last 1 safari version"
+    ]
+  }
 }
